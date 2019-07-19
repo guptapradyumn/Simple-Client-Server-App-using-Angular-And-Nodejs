@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     this.commonService.callJunction({}).subscribe(res => {
       if(res){
         this.data = res;
-    console.log('=>', this.data);
+    console.log('recieved data=>', this.data);
 
       }
     });
